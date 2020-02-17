@@ -23,7 +23,7 @@ namespace RazorPagesMovie.Pages.Movies
 
         public async Task OnGetAsync()
         {
-            Movie = await _context.Movies.ToListAsync();
+            Movie = await _context.Movie.ToListAsync();
         }
     }
 }
