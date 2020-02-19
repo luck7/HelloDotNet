@@ -26,6 +26,9 @@ namespace RazorPagesMovie.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Rating")
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("ReleaseDate")
@@ -36,7 +39,7 @@ namespace RazorPagesMovie.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Movies");
+                    b.ToTable("Movie");
                 });
 #pragma warning restore 612, 618
         }
